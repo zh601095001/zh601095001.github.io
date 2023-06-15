@@ -8,7 +8,7 @@ export default defineConfig({
   rewrites:{ // 路径重写
 
   },
-  // base:"/xxx", // 基础url
+  base:"/blogs", // 基础url
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
