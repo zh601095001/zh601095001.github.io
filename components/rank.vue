@@ -116,7 +116,7 @@ export default {
             align: app.config.align,
             verticalAlign: app.config.verticalAlign,
             rotate: app.config.rotate,
-            formatter: '{c}  {name|{a}}',
+            // formatter: '{name|{a}}: {c}',
             fontSize: 12,
             rich: {
                 name: {},
