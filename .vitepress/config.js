@@ -125,6 +125,7 @@ export default defineConfig({
     ],
     base: "/blogs/", // 基础url
     themeConfig: {
+        outlineTitle: '本页导航',
         lastUpdatedText: "最后修改：",
         search: {
             provider: 'local',
@@ -161,7 +162,11 @@ export default defineConfig({
             ],
             "/vitepress/": [],
             "/algorithm/": algorithm,
-            "/handover/": "auto",
+            "/handover/": [
+                {
+                    text:"Handover",
+                }
+            ],
         },
         socialLinks: [
             { icon: 'github', link: 'https://github.com/zh601095001/blogs' },
