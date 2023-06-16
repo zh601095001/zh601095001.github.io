@@ -16,22 +16,22 @@ import * as echarts from 'echarts';
  */
 export default {
     name: "rank",
-    props:{
+    props: {
         /**
          * @type Data[]
          */
-        data: Array
+        data: Array,
     },
     data() {
         return {
             id: "rank-" + Date.now(),
-            width:"100%",
-            height:"400px"
+            width: "100%",
+            height: "400px",
         };
     },
     mounted() {
         if (!this.data || !this.data.length) {
-            this.height = 0
+            this.height = 0;
             return;
         }
         var app = {};
@@ -145,18 +145,15 @@ export default {
                     saveAsImage: { show: true },
                 },
             },
-            xAxis: [
-                {
-                    type: 'category',
-                    axisTick: { show: false },
-                    data: this.plotData.names,
-                },
-            ],
-            yAxis: [
-                {
-                    type: 'value',
-                },
-            ],
+            xAxis: {
+                type: 'category',
+                axisTick: { show: false },
+                data: this.plotData.names,
+                name: "答题人",
+            },
+            yAxis: {
+                type: 'value',
+            },
             series: [
                 {
                     name: '运行时间(ms)',
@@ -166,8 +163,8 @@ export default {
                     emphasis: {
                         focus: 'series',
                     },
-                    itemStyle:{
-                        color:"#9bea45"
+                    itemStyle: {
+                        color: "#9bea45",
                     },
                     data: this.plotData.runTimes,
                 },
@@ -178,8 +175,8 @@ export default {
                     emphasis: {
                         focus: 'series',
                     },
-                    itemStyle:{
-                        color:"#0099f8"
+                    itemStyle: {
+                        color: "#0099f8",
                     },
                     data: this.plotData.memoConsumes,
                 },
@@ -187,24 +184,23 @@ export default {
         };
         option && myChart.setOption(option);
     },
-    computed:{
-        plotData(){
-            const names = []
-            const runTimes = []
-            const memoConsumes = []
-            this.data.forEach(item=>{
-                names.push(item.name)
-                runTimes.push(item.runTime)
-                memoConsumes.push(item.memoConsume)
-
-            })
+    computed: {
+        plotData() {
+            const names = [];
+            const runTimes = [];
+            const memoConsumes = [];
+            this.data.forEach(item => {
+                names.push(item.name);
+                runTimes.push(item.runTime);
+                memoConsumes.push(item.memoConsume);
+            });
             return {
                 names,
                 runTimes,
-                memoConsumes
-            }
-        }
-    }
+                memoConsumes,
+            };
+        },
+    },
 };
 </script>
 
