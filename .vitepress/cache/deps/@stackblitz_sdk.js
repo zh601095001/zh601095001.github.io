@@ -1,3 +1,5 @@
+import "./chunk-JC4IRQUL.js";
+
 // node_modules/@stackblitz/sdk/bundles/sdk.m.js
 var CONNECT_INTERVAL = 500;
 var CONNECT_MAX_ATTEMPTS = 20;

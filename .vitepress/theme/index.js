@@ -4,6 +4,7 @@ import Theme from 'vitepress/theme'
 import './style.css'
 import AlgorithmLevel from "../../components/algorithmLevel.vue";
 import Stackblitz from "../../components/stackblitz.vue";
+import Rank from "../../components/rank.vue";
 export default {
   ...Theme,
   Layout: () => {
@@ -14,5 +15,7 @@ export default {
   enhanceApp({ app, router, siteData }) {
     app.component('AlgorithmLevel',AlgorithmLevel)
     app.component('Stackblitz',Stackblitz)
+    app.component('Rank',Rank)
+
   }
 }
