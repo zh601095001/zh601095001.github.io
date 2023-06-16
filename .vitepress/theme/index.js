@@ -5,6 +5,7 @@ import './style.css'
 import AlgorithmLevel from "../../components/algorithmLevel.vue";
 import Stackblitz from "../../components/stackblitz.vue";
 import Rank from "../../components/rank.vue";
+import Highlight from "../../components/highlight.vue";
 export default {
   ...Theme,
   Layout: () => {
@@ -16,6 +17,7 @@ export default {
     app.component('AlgorithmLevel',AlgorithmLevel)
     app.component('Stackblitz',Stackblitz)
     app.component('Rank',Rank)
+    app.component('Highlight',Highlight)
 
   }
 }
