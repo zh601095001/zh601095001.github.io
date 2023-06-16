@@ -1,26 +1,31 @@
-export default [
-    {
-        text:"2023-6-15",
-        collapsed: false,
-        items:[
-            {
-                text: '完全二叉树的节点个数',
-                link: '/algorithm/完全二叉树的节点个数'
-            },
-            {
-                text: '搜索旋转排序数组',
-                link: '/algorithm/搜索旋转排序数组'
-            },
-        ]
-    },
-    {
-        text:"2023-6-16",
-        collapsed: false,
-        items:[
-            {
-                text: "得到山形数组的最少删除次数",
-                link:"/algorithm/得到山形数组的最少删除次数"
-            }
-        ]
-    }
-]
+import fs from "fs";
+
+const isDir = (dirPath) => {
+    return fs.statSync(dirPath).isDirectory();
+};
+export default (() => {
+    const root = "./algorithm/"
+    let dirs = fs.readdirSync(root);
+    dirs = dirs
+        .filter(dir => isDir(root + dir))
+        .sort((a, b) => {
+            return Date.parse(a) - Date.parse(b);
+        });
+    return dirs.map(dir => {
+        let subDirs = fs.readdirSync(root + dir);
+        const items = subDirs.filter(subDir => {
+            return subDir.endsWith(".md");
+        }).sort().map(subDir => {
+            const fileName = subDir.replace(/\.md$/,"")
+            return {
+                text: fileName,
+                link: `/algorithm/${dir}/${fileName}`
+            };
+        });
+        return {
+            text: dir,
+            collapsed: false,
+            items,
+        };
+    });
+})();
