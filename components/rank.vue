@@ -7,6 +7,7 @@
 
 <script>
 import * as echarts from 'echarts';
+import { isMobile } from "../utils";
 
 /**
  * @typedef Data
@@ -30,7 +31,7 @@ export default {
         };
     },
     mounted() {
-        if (!this.data || !this.data.length) {
+        if (!this.data || !this.data.length || isMobile()) {
             this.height = 0;
             return;
         }
