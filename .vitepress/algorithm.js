@@ -15,7 +15,7 @@ export default (() => {
         let subDirs = fs.readdirSync(root + dir);
         const items = subDirs.filter(subDir => {
             return subDir.endsWith(".md");
-        }).sort().map(subDir => {
+        }).map(subDir => {
             const fileName = subDir.replace(/\.md$/,"")
             return {
                 text: fileName,

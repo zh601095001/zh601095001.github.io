@@ -139,12 +139,12 @@ export default defineConfig({
                 text: "三方应用",
                 items: [
                     { text: "Stackblitz", link: "https://stackblitz.com/" },
+                    { text: "VitePress", link: "https://vitepress.dev/" },
                 ],
             },
             {
                 text: "笔记",
                 items: [
-                    { text: "VitePress", link: "/vitepress/" },
                 ],
             },
             { text: "关于", link: "/about/" },
@@ -164,7 +164,7 @@ export default defineConfig({
             "/handover/": "auto",
         },
         socialLinks: [
-            { icon: 'github', link: 'https://github.com/zh601095001' },
+            { icon: 'github', link: 'https://github.com/zh601095001/blogs' },
         ],
         docFooter: {
             prev: "上一页",
