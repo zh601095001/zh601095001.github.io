@@ -24,7 +24,7 @@ export default {
     },
     data() {
         return {
-            id: "stackblitz-" + Date.now(),
+            id: "rank-" + Date.now(),
             width:"100%",
             height:"400px"
         };
