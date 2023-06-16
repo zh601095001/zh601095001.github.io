@@ -4,8 +4,8 @@ layout: home
 
 hero:
   name: "ZHLCY2023"
-  text: "记录日常"
-  tagline: My great project tagline
+#  text: "记录日常"
+  tagline: 记录日常
   actions:
     - theme: brand
       text: 算法

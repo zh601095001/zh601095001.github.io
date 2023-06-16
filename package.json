@@ -5,6 +5,7 @@
   "license": "MIT",
   "devDependencies": {
     "markdown-it-mathjax3": "^4.3.2",
+    "sass": "^1.63.4",
     "vitepress": "^1.0.0-beta.2",
     "vue": "^3.3.4"
   },

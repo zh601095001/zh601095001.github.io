@@ -12,5 +12,15 @@ export default [
                 link: '/algorithm/搜索旋转排序数组'
             },
         ]
+    },
+    {
+        text:"2023-6-16",
+        collapsed: false,
+        items:[
+            {
+                text: "得到山形数组的最少删除次数",
+                link:"/algorithm/得到山形数组的最少删除次数"
+            }
+        ]
     }
 ]
