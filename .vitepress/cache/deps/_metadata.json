@@ -1,23 +1,23 @@
 {
-  "hash": "d3dedeb5",
-  "browserHash": "9670bd1e",
+  "hash": "edf37f33",
+  "browserHash": "d792c269",
   "optimized": {
     "vue": {
       "src": "../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "fd3d80be",
-      "needsInterop": false
-    },
-    "@stackblitz/sdk": {
-      "src": "../../../node_modules/@stackblitz/sdk/bundles/sdk.m.js",
-      "file": "@stackblitz_sdk.js",
-      "fileHash": "f89c1ae5",
+      "fileHash": "e4f72563",
       "needsInterop": false
     },
     "echarts": {
       "src": "../../../node_modules/echarts/index.js",
       "file": "echarts.js",
-      "fileHash": "5f546bd4",
+      "fileHash": "c8214bad",
+      "needsInterop": false
+    },
+    "@stackblitz/sdk": {
+      "src": "../../../node_modules/@stackblitz/sdk/bundles/sdk.m.js",
+      "file": "@stackblitz_sdk.js",
+      "fileHash": "f9d5884d",
       "needsInterop": false
     }
   },

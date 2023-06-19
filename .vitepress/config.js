@@ -167,6 +167,8 @@ export default defineConfig({
                     {text: "理论计算", link: "/theoreticalCalc/"},
                     {text: "高对称点选取", link: "https://www.cryst.ehu.es/rep/repres.html"},
                     {text: "高对称点选取2", link: "https://www.materialscloud.org/work/tools/seekpath"},
+                    {text: "操作系统", link: "/notes/操作系统"},
+                    {text: "计算机组成原理", link: "/notes/计算机组成原理/"},
                 ],
             },
             {text: "关于", link: "/about/"},
@@ -196,6 +198,25 @@ export default defineConfig({
                     ],
                 }
             ],
+            "/notes/计算机组成原理/":[
+                {
+                    text:"简介",
+                    items:[
+                        {
+                            text:"计算机硬件的基本组成",
+                            link:"/notes/计算机组成原理/计算机硬件的基本组成"
+                        },
+                        {
+                            text:"各个硬件的工作原理",
+                            link:"/notes/计算机组成原理/各个硬件的工作原理"
+                        },
+                        {
+                            text:"计算机系统的层次结构",
+                            link:"/notes/计算机组成原理/计算机系统的层次结构"
+                        }
+                    ]
+                }
+            ]
         },
         socialLinks: [
             {icon: 'github', link: 'https://github.com/zh601095001/blogs'},
