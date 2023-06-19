@@ -6,10 +6,14 @@ function getMinSwaps(num, k) {
     }
     const n = num.length;
     let ans = 0;
+    /**
+     * 思路：同时遍历两个数组，如果对应的两个数不相等，那么我们找到原数组num中数字的位置，通过一次冒泡，将原数组这个数交换到当前位置，使得当前位置两个数组值相等，然后再看下一个位置，直到每个位置的值都相等
+     */
     for (let i = 0; i < n; i++) {
         if (num[i] !== num_k[i]) {
             for (let j = i + 1; j < n; j++) {
                 if (num[j] === num_k[i]) {
+                    // 冒泡
                     for (let k = j - 1; k >= i; k--) {
                         ans++;
                         swap(num,k, k + 1);
