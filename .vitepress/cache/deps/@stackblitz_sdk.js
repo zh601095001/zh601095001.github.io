@@ -1,4 +1,4 @@
-import "./chunk-JC4IRQUL.js";
+import "./chunk-4EOJPDL2.js";
 
 // node_modules/@stackblitz/sdk/bundles/sdk.m.js
 var CONNECT_INTERVAL = 500;

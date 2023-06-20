@@ -6,6 +6,9 @@ import AlgorithmLevel from "../../components/algorithmLevel.vue";
 import Stackblitz from "../../components/stackblitz.vue";
 import Rank from "../../components/rank.vue";
 import Highlight from "../../components/highlight.vue";
+import StackblitzModal from "../../components/stackblitzModal.vue";
+import Antd from 'ant-design-vue';
+import 'ant-design-vue/dist/antd.css';
 export default {
   ...Theme,
   Layout: () => {
@@ -18,6 +21,8 @@ export default {
     app.component('Stackblitz',Stackblitz)
     app.component('Rank',Rank)
     app.component('Highlight',Highlight)
+    app.component('StackblitzModal',StackblitzModal)
+    app.use(Antd)
 
   }
 }

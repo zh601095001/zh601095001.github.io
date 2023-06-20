@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div style="height: 100%">
         <div :id="id"></div>
     </div>
 </template>
@@ -19,6 +19,7 @@ export default {
             default:{
                 forceEmbedLayout: true,
                 openFile: 'index.js',
+                view:"editor"
             }
         }
     },
