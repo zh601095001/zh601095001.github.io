@@ -5,7 +5,7 @@
 var isPathCrossing = function (path) {
     const location = [0, 0];
     const map = new Map()
-    map[[0,0]] = true
+    map.set([0,0].toString(),true)
     for (let direction of path) {
         switch (direction) {
         case "N":
@@ -20,8 +20,9 @@ var isPathCrossing = function (path) {
         case "E":
             location[0] += 1;
         }
-        if (map.has(location)) return true
-        map.set(location,true)
+        if (map.has(location.toString())) return true
+        map.set(location.toString(),true)
     }
+    return false
 };
-console.log(isPathCrossing("NESWW"));
+console.log(isPathCrossing("NES"));
