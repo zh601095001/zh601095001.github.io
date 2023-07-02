@@ -9,6 +9,7 @@ import Highlight from "../../components/highlight.vue";
 import StackblitzModal from "../../components/stackblitzModal.vue";
 import Antd from 'ant-design-vue';
 import 'ant-design-vue/dist/antd.css';
+import AuthUrl from "../../components/authUrl.vue";
 export default {
   ...Theme,
   Layout: () => {
@@ -22,7 +23,7 @@ export default {
     app.component('Rank',Rank)
     app.component('Highlight',Highlight)
     app.component('StackblitzModal',StackblitzModal)
+    app.component("AuthUrl",AuthUrl)
     app.use(Antd)
-
   }
 }

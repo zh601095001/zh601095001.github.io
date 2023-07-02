@@ -18,6 +18,8 @@
   "dependencies": {
     "@stackblitz/sdk": "^1.9.0",
     "ant-design-vue": "^3.2.20",
-    "echarts": "^5.4.2"
+    "crypto-js": "^4.1.1",
+    "echarts": "^5.4.2",
+    "js-base64": "^3.7.5"
   }
 }
