@@ -2,7 +2,7 @@
   <a @click="handleClick">{{ title }}</a>
   <a-modal
       v-model:visible="visible"
-      title="请输入密码"
+      title="请输入密码-下载PDF"
       :footer="null"
   >
     <a-form
@@ -30,6 +30,7 @@
 
 <script>
 import sha256 from "crypto-js/sha256"
+import {message} from "ant-design-vue";
 export default {
   name: "authUrl",
   props: {
@@ -54,6 +55,8 @@ export default {
       this.visible = false
       if (sha256(this.formState.password).toString() === "9b6248011d83ed46f7620a4c0a3580e8058121cb2e06c05e6bdab722bcb9a119"){
         window.open(this.url)
+      }else {
+        message.error('密码输入错误');
       }
     },
   }
