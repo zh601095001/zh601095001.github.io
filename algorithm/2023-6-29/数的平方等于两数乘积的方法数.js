@@ -29,6 +29,7 @@ function getTriplets(map1, map2) {
                 const num3 = square / num2;
                 if (num2 === num3) {
                     const count2 = map2.get(num2);
+                    // 排列组合： (C_n)^2
                     const curTriplets = count1 * count2 * (count2 - 1) / 2;
                     triplets += curTriplets;
                 } else if (num2 < num3 && keys2.indexOf(num3) !== -1) {
