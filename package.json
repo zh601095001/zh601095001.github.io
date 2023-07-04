@@ -16,6 +16,7 @@
     "docs:preview": "vitepress preview"
   },
   "dependencies": {
+    "@ant-design/icons-vue": "^6.1.0",
     "@stackblitz/sdk": "^1.9.0",
     "ant-design-vue": "^3.2.20",
     "crypto-js": "^4.1.1",

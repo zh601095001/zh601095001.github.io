@@ -127,7 +127,7 @@ export default defineConfig({
     base: "/blogs/", // 基础url
     themeConfig: {
         outlineTitle: '本页导航',
-        lastUpdatedText: "最后修改：",
+        lastUpdatedText: "最后修改",
         search: {
             provider: 'local',
             disableDetailedView: false,

@@ -1,8 +1,8 @@
 <template>
-  <a @click="handleClick">{{ title }}</a>
+  <a @click="handleClick">{{ title }}&nbsp;<download-outlined /></a>
   <a-modal
       v-model:visible="visible"
-      title="请输入密码-下载PDF"
+      title="请输入密码"
       :footer="null"
   >
     <a-form
@@ -14,7 +14,7 @@
         layout="inline"
     >
       <a-form-item
-          label="Password"
+          label="密码"
           name="password"
           :rules="[{ required: true, message: 'Please input your password!' }]"
       >
@@ -22,7 +22,7 @@
       </a-form-item>
       <a-form-item
       >
-        <a-button type="primary" html-type="submit">Submit</a-button>
+        <a-button type="primary" html-type="submit">下载</a-button>
       </a-form-item>
     </a-form>
   </a-modal>
@@ -31,13 +31,19 @@
 <script>
 import sha256 from "crypto-js/sha256"
 import {message} from "ant-design-vue";
+import {
+  DownloadOutlined
+} from '@ant-design/icons-vue';
 export default {
   name: "authUrl",
   props: {
     title: {
-      default: "PDF"
+      default: "Download"
     },
     url: String
+  },
+  components:{
+    DownloadOutlined
   },
   data() {
     return {
