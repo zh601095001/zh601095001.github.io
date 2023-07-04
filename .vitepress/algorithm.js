@@ -22,10 +22,30 @@ export default (() => {
                 link: `/algorithm/${dir}/${fileName}`
             };
         });
-        return {
-            text: dir,
-            collapsed: false,
-            items,
-        };
+        try{
+            const folderTimeStamp = Date.parse(dir)
+            if (!folderTimeStamp){
+                throw Error("算法目录的文件名格式有问题，必须为YY-MM-DD")
+            }
+            const today = new Date(Date.now())
+            today.setHours(0)
+            today.setMinutes(0)
+            today.setSeconds(0)
+            today.setMilliseconds(0)
+            const todayTimeStamp = Date.parse(today.toString())
+            return {
+                text: dir,
+                collapsed: todayTimeStamp !== folderTimeStamp,
+                items,
+            };
+        }catch (e) {
+            console.log(e)
+            return {
+                text: dir,
+                collapsed: false,
+                items,
+            };
+        }
+
     });
 })();
