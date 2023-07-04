@@ -16,36 +16,42 @@ export default (() => {
         const items = subDirs.filter(subDir => {
             return subDir.endsWith(".md");
         }).map(subDir => {
-            const fileName = subDir.replace(/\.md$/,"")
+            const fileName = subDir.replace(/\.md$/, "")
             return {
                 text: fileName,
                 link: `/algorithm/${dir}/${fileName}`
             };
         });
-        try{
-            const folderTimeStamp = Date.parse(dir)
-            if (!folderTimeStamp){
-                throw Error("算法目录的文件名格式有问题，必须为YY-MM-DD")
-            }
-            const today = new Date(Date.now())
-            today.setHours(0)
-            today.setMinutes(0)
-            today.setSeconds(0)
-            today.setMilliseconds(0)
-            const todayTimeStamp = Date.parse(today.toString())
+        if (dir.endsWith("&")) {
             return {
-                text: dir,
-                collapsed: todayTimeStamp !== folderTimeStamp,
+                text: dir.substring(0, dir.length - 1),
+                collapsed: false,
                 items,
             };
-        }catch (e) {
-            console.log(e)
+        }
+
+        const folderTimeStamp = Date.parse(dir)
+        if (!folderTimeStamp) {
+            console.log("算法目录的文件名格式有问题，必须为YY-MM-DD")
             return {
                 text: dir,
                 collapsed: false,
                 items,
             };
         }
+        const today = new Date(Date.now())
+        today.setHours(0)
+        today.setMinutes(0)
+        today.setSeconds(0)
+        today.setMilliseconds(0)
+        const todayTimeStamp = Date.parse(today.toString())
+        const yesterdayTimeStamp = todayTimeStamp - 24 * 60 * 60 * 1000
+        console.log(yesterdayTimeStamp)
+        return {
+            text: dir,
+            collapsed: !(todayTimeStamp === folderTimeStamp || yesterdayTimeStamp === folderTimeStamp),
+            items,
+        };
 
     });
 })();
