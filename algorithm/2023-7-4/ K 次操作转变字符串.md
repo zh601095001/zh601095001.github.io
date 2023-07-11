@@ -51,3 +51,6 @@ $$
 
 ## 代码
 <stackblitz project-id="can-convert-string-in-k-moves"/>
+
+## 答案
+<<< K次操作转变字符串.js

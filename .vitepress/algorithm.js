@@ -46,7 +46,6 @@ export default (() => {
         today.setMilliseconds(0)
         const todayTimeStamp = Date.parse(today.toString())
         const yesterdayTimeStamp = todayTimeStamp - 24 * 60 * 60 * 1000
-        console.log(yesterdayTimeStamp)
         return {
             text: dir,
             collapsed: !(todayTimeStamp === folderTimeStamp || yesterdayTimeStamp === folderTimeStamp),
