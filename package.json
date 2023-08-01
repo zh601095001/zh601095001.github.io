@@ -7,7 +7,7 @@
     "@vitejs/plugin-vue-jsx": "^3.0.1",
     "markdown-it-mathjax3": "^4.3.2",
     "sass": "^1.63.4",
-    "vitepress": "^1.0.0-beta.2",
+    "vitepress": "^1.0.0-beta.6",
     "vue": "^3.3.4"
   },
   "scripts": {

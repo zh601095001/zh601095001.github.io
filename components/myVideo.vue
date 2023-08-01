@@ -2,7 +2,7 @@
   <div>
     <h1 v-if="titleVisible">{{currentTitle}}</h1>
     <div style="margin-bottom: 20px;margin-top: 20px">
-      <video-play v-bind="options" :width="width" :height="height" :src="src"/>
+      <vue3VideoPlay v-bind="options" :width="width" :height="height" :src="src"/>
     </div>
     <a-list bordered :data-source="data">
       <template #header>
@@ -48,16 +48,10 @@
 </template>
 
 <script>
-import "vue3-video-play/dist/style.css";
-import {videoPlay} from "vue3-video-play";
 import sha256 from "crypto-js/sha256";
 import {message} from "ant-design-vue";
-
 export default {
   name: "MyVideo",
-  components: {
-    videoPlay
-  },
   props: {
     width: String,
     height: String,
