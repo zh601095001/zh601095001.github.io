@@ -109,7 +109,7 @@ export default {
     onFinish() {
       this.visible = false
       if (sha256(this.formState.password).toString() === "7e27e4bd3518e5a45a064bd10c805172c722c6dedd31057ca5727495132687ae") {
-        this.width = "800px"
+        this.width = "100%"
         this.height = "450px"
         this.src = this.privateSrc
         this.titleVisible = true
