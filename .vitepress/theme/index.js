@@ -10,6 +10,7 @@ import StackblitzModal from "../../components/stackblitzModal.vue";
 import Antd from 'ant-design-vue';
 import 'ant-design-vue/dist/antd.css';
 import AuthUrl from "../../components/authUrl.vue";
+import MyVideo from "../../components/myVideo.vue";
 export default {
   ...Theme,
   Layout: () => {
@@ -24,6 +25,7 @@ export default {
     app.component('Highlight',Highlight)
     app.component('StackblitzModal',StackblitzModal)
     app.component("AuthUrl",AuthUrl)
+    app.component("MyVideo",MyVideo)
     app.use(Antd)
   }
 }
