@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: "ZHLCY 2023"
+  name: "ZHAO 2023"
 #  text: "记录日常"
   tagline: 记录日常
   actions:

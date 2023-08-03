@@ -170,6 +170,7 @@ export default defineConfig({
                     {text: "高对称点选取2", link: "https://www.materialscloud.org/work/tools/seekpath"},
                     {text: "操作系统", link: "/notes/操作系统"},
                     {text: "计算机组成原理", link: "/notes/计算机组成原理/"},
+                    {text: "JavaScript", link: "/notes/JavaScript/"},
                 ],
             },
             {text: "关于", link: "/about/"},
@@ -204,6 +205,11 @@ export default defineConfig({
                             link:"/notes/计算机组成原理/计算机系统的层次结构"
                         }
                     ]
+                }
+            ],
+            "/notes/JavaScript/":[
+                {
+                    text:"JavaScript问题综合",
                 }
             ]
         },
