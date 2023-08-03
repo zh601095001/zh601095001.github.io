@@ -186,11 +186,6 @@ export default defineConfig({
             ],
             "/vitepress/": [],
             "/algorithm/": algorithm,
-            "/handover/": [
-                {
-                    text: "Handover",
-                }
-            ],
             "/theoreticalCalc/": theoreticalCalc,
             "/notes/计算机组成原理/":[
                 {
