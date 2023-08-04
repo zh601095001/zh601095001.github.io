@@ -2,6 +2,7 @@ import {defineConfig} from 'vitepress';
 import algorithm from "./algorithm";
 import mathjax3 from "markdown-it-mathjax3";
 import theoreticalCalc from "./theoreticalCalc";
+import game from "./game";
 // https://vitepress.dev/reference/site-config
 const customElements = [
     'math',
@@ -171,6 +172,7 @@ export default defineConfig({
                     {text: "操作系统", link: "/notes/操作系统"},
                     {text: "计算机组成原理", link: "/notes/计算机组成原理/"},
                     {text: "JavaScript", link: "/notes/JavaScript/"},
+                    {text: "Game", link: "/game/"}
                 ],
             },
             {text: "关于", link: "/about/"},
@@ -188,30 +190,31 @@ export default defineConfig({
             "/vitepress/": [],
             "/algorithm/": algorithm,
             "/theoreticalCalc/": theoreticalCalc,
-            "/notes/计算机组成原理/":[
+            "/notes/计算机组成原理/": [
                 {
-                    text:"简介",
-                    items:[
+                    text: "简介",
+                    items: [
                         {
-                            text:"计算机硬件的基本组成",
-                            link:"/notes/计算机组成原理/计算机硬件的基本组成"
+                            text: "计算机硬件的基本组成",
+                            link: "/notes/计算机组成原理/计算机硬件的基本组成"
                         },
                         {
-                            text:"各个硬件的工作原理",
-                            link:"/notes/计算机组成原理/各个硬件的工作原理"
+                            text: "各个硬件的工作原理",
+                            link: "/notes/计算机组成原理/各个硬件的工作原理"
                         },
                         {
-                            text:"计算机系统的层次结构",
-                            link:"/notes/计算机组成原理/计算机系统的层次结构"
+                            text: "计算机系统的层次结构",
+                            link: "/notes/计算机组成原理/计算机系统的层次结构"
                         }
                     ]
                 }
             ],
-            "/notes/JavaScript/":[
+            "/notes/JavaScript/": [
                 {
-                    text:"JavaScript问题综合",
+                    text: "JavaScript问题综合",
                 }
-            ]
+            ],
+            "/game/": game
         },
         socialLinks: [
             {icon: 'github', link: 'https://github.com/zh601095001/blogs'},
