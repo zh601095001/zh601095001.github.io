@@ -1,8 +1,11 @@
-"use strict"
-var uname = 'window';
+class A {
 
-function A() {
-    console.log(this.a)
+
+    static dog() {
+        console.log("static")
+    }
 }
 
-A()
+
+const a = new A()
+a.dog()
