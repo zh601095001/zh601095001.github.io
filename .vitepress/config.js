@@ -2,7 +2,6 @@ import {defineConfig} from 'vitepress';
 import algorithm from "./algorithm";
 import mathjax3 from "markdown-it-mathjax3";
 import theoreticalCalc from "./theoreticalCalc";
-import game from "./game";
 // https://vitepress.dev/reference/site-config
 const customElements = [
     'math',
@@ -214,7 +213,6 @@ export default defineConfig({
                     text: "JavaScript问题综合",
                 }
             ],
-            "/game/": game
         },
         socialLinks: [
             {icon: 'github', link: 'https://github.com/zh601095001/blogs'},
