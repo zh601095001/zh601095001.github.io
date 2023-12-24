@@ -4,15 +4,15 @@ layout: home
 
 hero:
   name: "ZHAO 2023"
-#  text: "记录日常"
-  tagline: 记录日常
+#  text: ""
+  tagline: 记录日常心得笔记以及理解过程
   actions:
+    - theme: brand
+      text: React源码
+      link: /notes/react-source-code/
     - theme: brand
       text: 算法
       link: /algorithm/
-    - theme: brand
-      text: 理论计算
-      link: /theoreticalCalc/
     - theme: alt
       text: 关于
       link: /about/

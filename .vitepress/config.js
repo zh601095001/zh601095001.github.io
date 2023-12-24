@@ -2,6 +2,7 @@ import {defineConfig} from 'vitepress';
 import algorithm from "./algorithm";
 import mathjax3 from "markdown-it-mathjax3";
 import theoreticalCalc from "./theoreticalCalc";
+import learnReactSourceCode from "./learnReactSourceCode";
 // https://vitepress.dev/reference/site-config
 const customElements = [
     'math',
@@ -125,6 +126,7 @@ export default defineConfig({
         // ]
     ],
     base: "/blogs/", // 基础url
+    appearance: false,
     themeConfig: {
         outlineTitle: '本页导航',
         lastUpdatedText: "最后修改",
@@ -136,26 +138,30 @@ export default defineConfig({
         // https://vitepress.dev/reference/default-theme-config
         nav: [
             {text: '首页', link: '/'},
-            {text: "算法", link: "/algorithm/"},
             {
-                text: "三方应用",
+                text: "笔记",
                 items: [
-                    {text: "Stackblitz", link: "https://stackblitz.com/"},
-                    {text: "VitePress", link: "https://vitepress.dev/"},
+                    {text: "React源码学习", link: "/notes/react-source-code/"},
+                    {text: "操作系统", link: "/notes/操作系统"},
+                    {text: "计算机组成原理", link: "/notes/计算机组成原理/"},
+                    {text: "JavaScript", link: "/notes/JavaScript/"},
                 ],
             },
             {
                 text: "理论计算",
                 items: [
+                    {text: "计算笔记", link: "/theoreticalCalc/"},
                     {text: "VASP Wiki", link: "https://www.vasp.at/wiki/index.php/The_VASP_Manual"},
                     {text: "Material Project", link: "https://materialsproject.org/"},
                     {text: "Crystallography Open Database", link: "http://www.crystallography.net/cod/search.html"},
                     {text: "Crystallography Open Database", link: "http://www.crystallography.net/cod/search.html"},
-                    {text: "VASPKIT", link: "http://vaspkit.sourceforge.net/"}
+                    {text: "VASPKIT", link: "http://vaspkit.sourceforge.net/"},
+                    {text: "高对称点选取", link: "https://www.cryst.ehu.es/rep/repres.html"},
+                    {text: "高对称点选取2", link: "https://www.materialscloud.org/work/tools/seekpath"},
                 ],
             },
             {
-                text: "科研",
+                text: "学术网站",
                 items: [
                     {text: "Web of Science", link: "http://apps.webofknowledge.com/"},
                     {text: "万方数据", link: "http://www.wanfangdata.com.cn/index.html"},
@@ -163,15 +169,10 @@ export default defineConfig({
                 ],
             },
             {
-                text: "笔记",
+                text: "三方应用",
                 items: [
-                    {text: "理论计算", link: "/theoreticalCalc/"},
-                    {text: "高对称点选取", link: "https://www.cryst.ehu.es/rep/repres.html"},
-                    {text: "高对称点选取2", link: "https://www.materialscloud.org/work/tools/seekpath"},
-                    {text: "操作系统", link: "/notes/操作系统"},
-                    {text: "计算机组成原理", link: "/notes/计算机组成原理/"},
-                    {text: "JavaScript", link: "/notes/JavaScript/"},
-                    {text: "Game", link: "/game/"}
+                    {text: "Stackblitz", link: "https://stackblitz.com/"},
+                    {text: "VitePress", link: "https://vitepress.dev/"},
                 ],
             },
             {text: "关于", link: "/about/"},
@@ -213,6 +214,7 @@ export default defineConfig({
                     text: "JavaScript问题综合",
                 }
             ],
+            "/notes/react-source-code/": learnReactSourceCode,
         },
         socialLinks: [
             {icon: 'github', link: 'https://github.com/zh601095001/blogs'},
