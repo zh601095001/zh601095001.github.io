@@ -60,8 +60,8 @@ export default {
                         // 在弹出层中添加图片
                         const previewImage = document.createElement('img');
                         previewImage.src = targetElement.src;
-                        previewImage.style.maxWidth = '80%';
-                        previewImage.style.maxHeight = '80%';
+                        previewImage.style.maxWidth = '100%';
+                        previewImage.style.maxHeight = '100%';
                         previewContainer.appendChild(previewImage);
                         // 点击弹出层，关闭预览
                         previewContainer.addEventListener('click', (e) => {
