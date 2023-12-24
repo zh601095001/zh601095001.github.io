@@ -3,7 +3,7 @@
 
 执行语句：`ReactDOM.createRoot(rootElement).render(<App/>)`
 
-### Render阶段总体流程（DFS）:![image-20231224114947261](https://typro-zh.oss-cn-shanghai.aliyuncs.com/image-20231224114947261.png)
+## Render阶段总体流程（DFS）:![image-20231224114947261](https://typro-zh.oss-cn-shanghai.aliyuncs.com/image-20231224114947261.png)
 
 ![image-20231216155723242](https://typro-zh.oss-cn-shanghai.aliyuncs.com/image-20231216155723242.png)
 
