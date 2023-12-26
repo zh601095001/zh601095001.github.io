@@ -25,3 +25,12 @@
 
 注：真实dom的构建过程在**completeWork**中，**beginWork**中构建的是整颗Fiber树，mount时的Fiber树只有App是有flags的，因此对应修改真实dom也只在此处生效。
 
+## CompleteWork
+
+大体流程：
+
+![image-20231226135001369](https://typro-zh.oss-cn-shanghai.aliyuncs.com/image-20231226135001369.png)
+
+appendAllChild流程：
+
+![image-20231226140408062](https://typro-zh.oss-cn-shanghai.aliyuncs.com/image-20231226140408062.png)
