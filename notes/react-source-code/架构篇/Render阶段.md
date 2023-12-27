@@ -34,3 +34,6 @@
 appendAllChild流程：
 
 ![image-20231226140408062](https://typro-zh.oss-cn-shanghai.aliyuncs.com/image-20231226140408062.png)
+
+## CommitRoot阶段
+
