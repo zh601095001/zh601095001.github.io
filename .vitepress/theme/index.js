@@ -11,7 +11,7 @@ import Antd from 'ant-design-vue';
 import 'ant-design-vue/dist/antd.css';
 import AuthUrl from "../../components/authUrl.vue";
 import MyVideo from "../../components/myVideo.vue";
-import "vue3-video-play/dist/style.css";
+// import "vue3-video-play/dist/style.css";
 
 export default {
     ...Theme,
@@ -31,8 +31,8 @@ export default {
         app.use(Antd)
 
         if (!import.meta.env.SSR) {
-            const plugin = await import('vue3-video-play')
-            app.use(plugin)
+            // const plugin = await import('vue3-video-play')
+            // app.use(plugin)
 
             document.addEventListener('click', function (event) {
                 // 检查触发事件的元素是否是 img 标签或其子元素

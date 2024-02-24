@@ -11,6 +11,9 @@ hero:
       text: React源码
       link: /notes/react-source-code/
     - theme: brand
+      text: 前端面试
+      link: /notes/前端面试/
+    - theme: brand
       text: 算法
       link: /algorithm/
     - theme: alt

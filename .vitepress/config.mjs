@@ -3,6 +3,7 @@ import algorithm from "./algorithm";
 import mathjax3 from "markdown-it-mathjax3";
 import theoreticalCalc from "./theoreticalCalc";
 import learnReactSourceCode from "./learnReactSourceCode";
+import frontendInterview from "./frontendInterview.js";
 // https://vitepress.dev/reference/site-config
 const customElements = [
     'math',
@@ -145,6 +146,7 @@ export default defineConfig({
                     {text: "操作系统", link: "/notes/操作系统"},
                     {text: "计算机组成原理", link: "/notes/计算机组成原理/"},
                     {text: "JavaScript", link: "/notes/JavaScript/"},
+                    {text: "前端面试", link: "/notes/前端面试/"},
                 ],
             },
             {
@@ -215,6 +217,7 @@ export default defineConfig({
                 }
             ],
             "/notes/react-source-code/": learnReactSourceCode,
+            "/notes/前端面试/": frontendInterview,
         },
         socialLinks: [
             {icon: 'github', link: 'https://github.com/zh601095001/blogs'},
