@@ -126,7 +126,7 @@ export default defineConfig({
         //   }
         // ]
     ],
-    base: "/blogs/", // 基础url
+    base: "/", // 基础url
     appearance: false,
     themeConfig: {
         outlineTitle: '本页导航',

@@ -131,4 +131,30 @@ class MyPromise {
             reject(reason)
         })
     }
+
+    static all(proms) {
+        let _resolve, _reject;
+        const p = new MyPromise((resolve, reject) => {
+            _resolve = resolve
+            _reject = reject
+        })
+        const result = []
+        let count = 0
+        let fulFilledCount = 0
+        for (const prom of proms) {
+            const i = count
+            count++
+            MyPromise.resolve(prom).then(data => {
+                result[i] = data
+                fulFilledCount++
+                if (fulFilledCount === count) {
+                    _resolve(result)
+                }
+            })
+        }
+        if (count === 0) {
+            _resolve(result)
+        }
+        return p
+    }
 }
