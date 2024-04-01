@@ -9,5 +9,5 @@ REMOTE_IP = os.getenv("REMOTE_IP")
 PASSWORD = os.getenv("PASSWORD")
 REMOTE_USERNAME = os.getenv("REMOTE_USERNAME")
 
-# system("npm run docs:build")
+system("npm run docs:build")
 upload_folder_to_sftp(REMOTE_IP, REMOTE_USERNAME, PASSWORD, "./.vitepress/dist", "/var/www/html")
