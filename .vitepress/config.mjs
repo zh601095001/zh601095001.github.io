@@ -4,6 +4,7 @@ import mathjax3 from "markdown-it-mathjax3";
 import theoreticalCalc from "./theoreticalCalc";
 import learnReactSourceCode from "./learnReactSourceCode";
 import frontendInterview from "./frontendInterview.js";
+import dailyNotes from "./dailyNotes.js";
 // https://vitepress.dev/reference/site-config
 const customElements = [
     'math',
@@ -192,6 +193,7 @@ export default defineConfig({
             "/vitepress/": [],
             "/algorithm/": algorithm,
             "/theoreticalCalc/": theoreticalCalc,
+            "/dailyNotes": dailyNotes,
             "/notes/计算机组成原理/": [
                 {
                     text: "简介",

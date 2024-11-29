@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: "ZHAO 2023"
+  name: "CuddleBugs 2024"
 #  text: ""
   tagline: 记录日常心得笔记以及理解过程
   actions:
@@ -16,6 +16,9 @@ hero:
     - theme: brand
       text: 算法
       link: /algorithm/
+    - theme: brand
+      text: 日常笔记分享
+      link: /dailyNotes
     - theme: alt
       text: 关于
       link: /about/
